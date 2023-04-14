@@ -3,6 +3,12 @@ permalink: /about/
 title: "About"
 ---
 
+
+[Download in PDF format][1]
+
+[1]:{{ site.url }}/downloads/harran-cv.pdf
+
+
 ## Summary
 Backend Developer with 7+ years of experience in web development, worked on a variety of projects across different industries
 
@@ -14,7 +20,6 @@ Backend Developer with 7+ years of experience in web development, worked on a va
 **Databases:** MySQL, MongoDB <br>
 **Web Architectures:** Microservices, RESTful APIs, MVC <br>
 **Systems:** Docker, Kubernetes <br>
-
 
 
 ## Experience
@@ -89,8 +94,6 @@ Backend Developer with 7+ years of experience in web development, worked on a va
 -Designed websites using HTML, CSS, and Bootstrap
 <br><br>
 `Skills: PHP · MySQL`
-
-
 
 
 

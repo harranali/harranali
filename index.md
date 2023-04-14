@@ -4,6 +4,11 @@ title:  "CV"
 author_profile: true
 ---
 
+[Download in PDF format][1]
+
+[1]:{{ site.url }}/downloads/harran-cv.pdf
+
+
 ## Summary
 Backend Developer with 7+ years of experience in web development, worked on a variety of projects across different industries
 
