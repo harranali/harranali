@@ -1,8 +1,9 @@
 ---
-title: "Post: Standard"
+title: "Post: Standard golang here"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
+  - Cat2
 tags:
   - Post Formats
   - readability

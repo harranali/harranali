@@ -13,25 +13,62 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
-email:
+include: ['_categories']
+
+
+title: Harran Ali
+# subtitle: "Backend Developer"
+url: "https://harranali.github.io"
+repository: "harranali/harranali"
+
+email: harran.m@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-twitter_username: username
-github_username: username
+  Backend Developer with 7+ years of experience in web development, worked on a variety of projects across different industries.
+twitter_username: harran_ali
+github_username: harranali
 minimal_mistakes_skin: default
 search: true
+lunr: # the search
+  search_within_pages: true
+
+
+
+breadcrumbs: true 
+comments:
+  provider: "utterances"
+  utterances:
+    theme: "github-light" # "github-dark"
+    issue_term: "pathname"
+    label: "comment" # Optional - must be existing label.
+
+
+
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "" # "UA-1234567-8"
+    anonymize_ip: false # default
+
+
+collections:
+  posts:
+    output: true
+    permalink: /:name/
+  golang:
+    output: true
+    permalink: /:name/
+
+
 
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
 # Outputting
-permalink: /:categories/:title/
+permalink: /:title/
+#permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Asia/Dubai # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
   - _pages
@@ -58,34 +95,32 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name   : "Harran Ali"
+  avatar : "/assets/images/avatar.jpeg"
+  location : "Dubai, UAE"
+  bio    : "Backend Developer with 7+ years of experience in web development, worked on a variety of projects across different industries."
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:harran.m@gmail.com"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/harran"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/harranali"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/harran_ali"
 
 footer:
   links:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+      url: "https://twitter.com/harran_ali"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/harranali"
 
 defaults:
   # _posts
@@ -94,11 +129,26 @@ defaults:
       type: posts
     values:
       layout: single
+      show_date: true
       author_profile: true
       read_time: true
       comments: true
       share: true
       related: true
+
+  # _golang
+  - scope:
+      path: ""
+      type: golang
+    values:
+      layout: single
+      show_date: true
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+
   # _pages
   - scope:
       path: "_pages"
@@ -113,3 +163,5 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+
+
