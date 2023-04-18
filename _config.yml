@@ -13,9 +13,6 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-include: ['_categories']
-
-
 title: Harran's Blog
 # subtitle: "Backend Developer"
 url: "https://harranali.github.io"
@@ -48,17 +45,6 @@ analytics:
   google:
     tracking_id: "" # "UA-1234567-8"
     anonymize_ip: false # default
-
-
-collections:
-  posts:
-    output: true
-    permalink: /:name/
-  golang:
-    output: true
-    permalink: /:name/
-
-
 
 # Build settings
 markdown: kramdown
@@ -93,6 +79,7 @@ plugins:
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-archives
 
 author:
   name   : "Harran Ali"
@@ -136,19 +123,6 @@ defaults:
       share: true
       related: true
 
-  # _golang
-  - scope:
-      path: ""
-      type: golang
-    values:
-      layout: single
-      show_date: true
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
-
   # _pages
   - scope:
       path: "_pages"
@@ -157,11 +131,9 @@ defaults:
       layout: single
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-
-
+#category_archive:
+#  type: liquid
+#  path: /categories/
+#tag_archive:
+#  type: liquid
+#  path: /tags/

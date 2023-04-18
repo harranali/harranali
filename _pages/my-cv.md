@@ -1,8 +1,7 @@
 ---
-permalink: /about/
-title: "About"
+permalink: /my-cv/
+title: "My CV"
 ---
-
 
 [Download in PDF format][1]
 

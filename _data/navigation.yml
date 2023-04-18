@@ -1,9 +1,5 @@
 main:
-  - title: "All Posts"
-    url: /posts/
-  - title: "Golang"
-    url: /golang/
-  - title: "Tags"
-    url: /tags/
-  #- title: "About"
-  #  url: /about/
+  - title: "Home"
+    url: /
+  - title: "My CV"
+    url: /my-cv/
